@@ -67,3 +67,11 @@ def calc_signature_from_str(sign_string):
 For `secret_key` = a621e547612e6e219bd4113bdc6643dadb3d68ac 
 
 Result `sign` = qTck456D/g/uueP5jnBtA9KePB3NPZH5dfKqd5t0XvE=
+
+___
+
+# Deploy with Docker
+1. Install Docker
+2. run `docker-compose up -d --build`
+3. set migrations `docker-compose exec web python manage.py migrate`
+4. add admin `docker-compose exec web python manage.py createsuperuser`
